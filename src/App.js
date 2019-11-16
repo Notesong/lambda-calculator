@@ -19,13 +19,28 @@ function App() {
 
   return (
     <div className="container">
-      <Logo />
+      <div className="logo">
+        <Logo />
+      </div>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-          <Display />
-          <Specials />
-          <Numbers />
-          <Operators />
+          <div className="screen">
+            <Display />
+          </div>
+          <div className="buttons">
+            <div className="leftColumn">
+              <div className="specials">
+                <Specials />
+              </div>
+              <div className="numbers">
+                <Numbers />
+              </div>
+            </div>
+            <div className="rightColumn">
+              <Operators /> 
+            </div>
+                     
+          </div>
       </div>
     </div>
   );

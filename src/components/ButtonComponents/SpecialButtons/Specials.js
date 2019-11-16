@@ -20,7 +20,6 @@ const Specials = () => {
           <SpecialButton
             key={index}
             button={special}
-            selectSpecialButton={setSpecialState}
           />
          );
        })}

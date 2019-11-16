@@ -19,4 +19,55 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+.logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.screen {
+    margin-bottom: 1rem;
+}
+button {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px black;
+    margin: 0.8rem;
+}
+.special {
+    background-color: rgb(79, 79, 236);
+}
+.operator {
+    background-color: rgb(94, 198, 233);
+}
+.number {
+    background-color: rgb(40, 40, 151);
+}
+.buttons, .screen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.leftColumn {
+    width: 75%;
+}
+.number:nth-child(10) {
+    width: 230px;
+    border-top-left-radius: 80px 100px;
+    border-top-right-radius: 80px 100px;
+    border-bottom-left-radius: 80px 100px;
+    border-bottom-right-radius: 80px 100px;
+}
+.rightColumn {
+    width: 25%;
+    margin-right: 10px;
+}
+.specials, .numbers {
+    margin-left: 23px;
+}

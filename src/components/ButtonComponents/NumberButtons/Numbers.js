@@ -20,7 +20,6 @@ const Numbers = () => {
           <NumberButton
             key={index}
             button={number}
-            selectNumberButton={setNumberState}
           />
          );
        })}
