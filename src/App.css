@@ -1,7 +1,6 @@
 .container {
     background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
+    width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
@@ -58,7 +57,7 @@ button {
     width: 75%;
 }
 .number:nth-child(10) {
-    width: 230px;
+    width: 227px;
     border-top-left-radius: 80px 100px;
     border-top-right-radius: 80px 100px;
     border-bottom-left-radius: 80px 100px;
