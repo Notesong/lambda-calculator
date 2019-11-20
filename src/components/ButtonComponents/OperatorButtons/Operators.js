@@ -21,6 +21,7 @@ const Operators = (props) => {
               key={index}
               button={operator}
               setOperator = {props.setOperator}
+              setfirstNumComplete = {props.setfirstNumComplete}
             />
          );
        })}

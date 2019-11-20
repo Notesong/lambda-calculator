@@ -16,14 +16,21 @@ function App() {
   const [special, setSpecial] = useState('0');
   const [firstNumber, setFirstNumber] = useState('0');
   const [secondNumber, setSecondNumber] = useState('0');
+  const [firstNumComplete, setfirstNumComplete] = useState(false);
 
   // calculator logic
-  function createNumString(buttonPressed) {
-    console.log("Inside createLogicString");
-    console.log(buttonPressed);
+  function createFirstNum(button) {
+    if(firstNumber === '0') {
+      setFirstNumber(button);
+    } else {
+      setFirstNumber(firstNumber + button);
+    }
+  }
+  function createSecondNum(button) {
+    setSecondNumber(secondNumber + button);
   }
 
-  function calculate() {
+  function calculate() { 
     return null;
   }
   
@@ -36,24 +43,27 @@ function App() {
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
           <div className="screen">
-            <Display />
+            <Display firstNumber={firstNumber} />
           </div>
           <div className="buttons">
             <div className="leftColumn">
               <div className="specials">
                 <Specials 
-                  setSpecial = {setSpecial}
+                  // setSpecial = {setSpecial}
                 />
               </div>
               <div className="numbers">
                 <Numbers 
-                 createNumString = {createNumString}
+                 createFirstNum = {createFirstNum}
+                 createSecondNum = {createSecondNum}
+                 firstNumComplete = {firstNumComplete}
                 />
               </div>
             </div>
             <div className="rightColumn">
               <Operators 
-                setOperator = {setOperator}
+                // setOperator = {setOperator}
+                setfirstNumComplete = {setfirstNumComplete}
               /> 
             </div>
                      

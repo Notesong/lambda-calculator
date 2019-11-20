@@ -20,7 +20,9 @@ const Numbers = (props) => {
           <NumberButton
             key={index}
             button={number}
-            createLogicString = {props.createNumString}
+            createFirstNum = {props.createFirstNum}
+            createSecondNum = {props.createSecondNum}
+            firstNumComplete = {props.firstNumComplete}
           />
          );
        })}
